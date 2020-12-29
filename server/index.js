@@ -34,5 +34,5 @@ app.post("/", jsonParser, (req, res) => {
 })
 
 http.listen(port, () => {
-  console.log(`Listening on localhost:${port}`);
+  console.log(`Server: Listening on localhost:${port}`);
 });

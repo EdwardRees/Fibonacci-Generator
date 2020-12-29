@@ -26,6 +26,13 @@ function App() {
       });
   };
 
+  const showValue = () => {
+    if(fib > 8944394323791464){
+      return `≈${fib}`;
+    }
+    return fib;
+  }
+
   const onChangeValue = (e: any) => {
     setVal(e.target.value);
   };
@@ -41,7 +48,7 @@ function App() {
             <input type="number" id="input" className="form-control" onChange={onChangeValue} />
           </div>
         </form>
-        <h2>≈ {fib}</h2>
+        <h2>{showValue()}</h2>
       </header>
     </div>
   );
